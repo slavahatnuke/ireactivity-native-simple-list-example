@@ -3,6 +3,8 @@ The main idea:
 
 ```javascript
 import React, {Component} from 'react';
+
+// native
 import {
     AppRegistry,
     Text,
@@ -15,6 +17,7 @@ import {Provider, connect} from 'ireactivity';
 
 const uid = () => Math.random().toString(35).slice(2, 8).toUpperCase();
 
+// store, it's just an object.
 const store = {
     todos: [
         {title: 'Todo #1', id: uid()},
@@ -31,7 +34,7 @@ const TodoView = ({todo, onRemove}) =>
             title={`[x]`}
             color="#FF0000"
         />
-    </View>
+    </View>;
 
 const Todo = connect(TodoView, {
     onRemove: (store) => (todo) => {
@@ -71,7 +74,6 @@ const App = () =>
 
 const AppRunner = () => <Provider store={store}><App/></Provider>;
 AppRegistry.registerComponent('ireactivityNativeSimpleListExample', () => AppRunner);
-
 ```
 
 ## How to start
