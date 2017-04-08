@@ -13,46 +13,6 @@ import {
 // iReactivity binding functions
 import {Provider, connect} from 'ireactivity';
 
-//
-// export default class ireactivityNativeSimpleListExample extends Component {
-//   render() {
-//     return (
-//       <View style={styles.container}>
-//         <Text style={styles.welcome}>
-//           Welcome to React Native!
-//         </Text>
-//         <Text style={styles.instructions}>
-//           To get started, edit index.ios.js
-//         </Text>
-//         <Text style={styles.instructions}>
-//           Press Cmd+R to reload,{'\n'}
-//           Cmd+D or shake for dev menu
-//         </Text>
-//       </View>
-//     );
-//   }
-// }
-//
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//     backgroundColor: '#F5FCFF',
-//   },
-//   welcome: {
-//     fontSize: 20,
-//     textAlign: 'center',
-//     margin: 10,
-//   },
-//   instructions: {
-//     textAlign: 'center',
-//     color: '#333333',
-//     marginBottom: 5,
-//   },
-// });
-
-
 const uid = () => Math.random().toString(35).slice(2, 8).toUpperCase();
 
 const store = {
@@ -103,12 +63,6 @@ const TodoPlus = connect(TodoPlusView, {
     }
 });
 
-// const AppView = () => <View><Text>List</Text> <TodoPlus/> <Todos/></View>;
-
-// const App = AppView;
-
-
-// <View><Text>List</Text> <TodoPlus/> <Todos/></View>
 const App = () =>
     <View style={ {alignItems: 'center', margin: 20} }>
         <TodoPlus/>
