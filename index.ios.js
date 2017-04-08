@@ -4,6 +4,7 @@ import {
   Text,
   View
 } from 'react-native';
+
 //
 // export default class ireactivityNativeSimpleListExample extends Component {
 //   render() {
@@ -43,6 +44,10 @@ import {
 //   },
 // });
 
-const App = () => <View><Text>OK</Text></View>;
+
+
+
+
+const App = () => <View style={ {alignItems: 'center', margin: 20} }><Text>OK</Text></View>;
 
 AppRegistry.registerComponent('ireactivityNativeSimpleListExample', () => App);
