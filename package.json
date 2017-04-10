@@ -8,7 +8,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "ireactivity": "0.0.14",
+    "ireactivity": "0.0.16",
     "prop-types": "^15.5.1",
     "react": "16.0.0-alpha.6",
     "react-native": "0.43.2"
